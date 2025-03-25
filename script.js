@@ -106,15 +106,8 @@ const hamburgerBtn = document.getElementById('hamburger-btn');
 const sidebar = document.getElementById('sidebar');
 
 hamburgerBtn.addEventListener('click', () => {
-   
-    if (sidebar.classList.contains('translate-y-full')) {
-      
-        sidebar.classList.remove('translate-y-full');
-        sidebar.classList.add('-translate-y-full');
-    } else {
-        sidebar.classList.remove('-translate-y-full');
-        sidebar.classList.add('translate-y-full');
-    }
+    sidebar.classList.toggle('translate-y-full');  // Hides the sidebar
+    sidebar.classList.toggle('-translate-y-full'); // Shows the sidebar
 });
 
 
