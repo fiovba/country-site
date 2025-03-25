@@ -100,7 +100,7 @@ function getRandomFlags() {
 }
 
 function goDetails(id){
-    window.location.href=`http://127.0.0.1:5500/details.htm?id=${id}`
+    window.location.href=`https://country-site-gamma.vercel.app/details.htm?id=${id}`
 }
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const sidebar = document.getElementById('sidebar');
