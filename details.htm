@@ -34,11 +34,34 @@
                     <a rel="noopener noreferrer" id="polar" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Antarctic</a>
                 </li>
             </ul>
-            <button title="Button" type="button" class="p-4 md:hidden">
+            <div id="sidebar" class="bg-white md:hidden w-full transform transition-transform duration-300 -translate-y-full absolute top-[-170px] left-0">
+                <ul class="justify-center flex flex-col p-5 items-center gap-5">
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="europe" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Europe</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="asia" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Asia</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="americas" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">America</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="africa" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Africa</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="oceania" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Oceania</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" id="polar" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-gray-300">Antarctic</a>
+                    </li>
+                </ul>
+            </div>
+            <button title="Button" type="button" class="p-4 md:hidden" id="hamburger-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-800">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
+            
         </div>
         
     </header>
@@ -118,7 +141,14 @@ function loadDetails() {
     </div>
 </div>`;
 }
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sidebar = document.getElementById('sidebar');
 
+hamburgerBtn.addEventListener('click', () => {
+   
+    sidebar.classList.toggle('translate-y-full');  
+    sidebar.classList.toggle('-translate-y-full');
+});
 getData();
 
     </script>
