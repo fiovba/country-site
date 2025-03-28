@@ -106,8 +106,8 @@ const hamburgerBtn = document.getElementById('hamburger-btn');
 const sidebar = document.getElementById('sidebar');
 
 hamburgerBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('translate-y-full');  // Hides the sidebar
-    sidebar.classList.toggle('-translate-y-full'); // Shows the sidebar
+    sidebar.classList.toggle('translate-y-full');  
+    sidebar.classList.toggle('-translate-y-full');
 });
 
 
